@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Hotel_Booking_Service.iml" filepath="$PROJECT_DIR$/.idea/Hotel_Booking_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rewards-service.iml" filepath="$PROJECT_DIR$/.idea/modules/rewards-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rewards-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rewards-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rewards-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/rewards-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/room-service.iml" filepath="$PROJECT_DIR$/.idea/modules/room-service.iml" />
     </modules>
   </component>
 </project>
