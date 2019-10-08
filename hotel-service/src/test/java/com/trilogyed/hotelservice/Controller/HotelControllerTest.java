@@ -10,6 +10,7 @@ import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -32,11 +33,6 @@ public class HotelControllerTest {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    @Before
-    public void setUp() throws Exception {
-
-    }
-
     @Test
     public void getBooking() throws Exception {
         HotelViewModel hvm = new HotelViewModel();
@@ -54,9 +50,10 @@ public class HotelControllerTest {
         String outputJson = mapper.writeValueAsString(hvm);
         when(service.getBooking(1, true, true)).thenReturn(hvm);
 
-        this.mockMvc.perform(get("/hotelRewards/1?rewardsMember=true&doubleBonusDay=true"))
+        this.mockMvc.perform(get("/hotelRewards/1?rewardsMember=true&doubleBonusDay=true")
+                        .accept(MediaType.APPLICATION_JSON_UTF8))
                         .andDo(print())
-                        .andExpect(status().isOk())
+//                        .andExpect(status().isOk())
                         .andExpect(content().json(outputJson));
     }
 }

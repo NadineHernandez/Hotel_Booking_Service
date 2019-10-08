@@ -17,8 +17,8 @@ public class HotelServiceLayer {
         this.roomService = roomService;
     }
 
-    public HotelViewModel getBooking(int roomId, boolean rewardsMember, boolean doubleBonusDay) {
-        Room room = roomService.getRoom(roomId);
+    public HotelViewModel getBooking(int number, boolean rewardsMember, boolean doubleBonusDay) {
+        Room room = roomService.getRoom(number);
         Rewards rewards = rewardService.getRewards(room.getRoomType());
 
         HotelViewModel hvm = new HotelViewModel();
