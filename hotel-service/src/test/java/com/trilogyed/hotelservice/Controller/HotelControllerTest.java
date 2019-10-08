@@ -53,7 +53,7 @@ public class HotelControllerTest {
         this.mockMvc.perform(get("/hotelRewards/1?rewardsMember=true&doubleBonusDay=true")
                         .accept(MediaType.APPLICATION_JSON_UTF8))
                         .andDo(print())
-//                        .andExpect(status().isOk())
+                        .andExpect(status().isOk())
                         .andExpect(content().json(outputJson));
     }
 }
